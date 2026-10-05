@@ -1,0 +1,76 @@
+{
+  "user": {
+    "id": "me",
+    "name": "Alex Morgan",
+    "username": "@alexmorgan",
+    "about": "Making time for the good conversations.",
+    "email": "alex.morgan@example.com",
+    "color": "#8e83f4"
+  },
+  "chats": [
+    {
+      "id": "maya",
+      "name": "Maya Chen",
+      "username": "@mayachen",
+      "color": "#f0a17b",
+      "online": true,
+      "unread": 2,
+      "messages": [
+        { "id": "m1", "text": "Hey! Have you had a chance to look at the photos from the weekend?", "time": "2026-10-05T09:12:00.000Z", "fromMe": false },
+        { "id": "m2", "text": "Just went through them — the sunset ones are unreal 🌅", "time": "2026-10-05T09:14:00.000Z", "fromMe": true },
+        { "id": "m3", "text": "Right? We should print a few for the living room.", "time": "2026-10-05T09:16:00.000Z", "fromMe": false }
+      ]
+    },
+    {
+      "id": "noah",
+      "name": "Noah Williams",
+      "username": "@noahw",
+      "color": "#6cbea7",
+      "online": true,
+      "unread": 0,
+      "messages": [
+        { "id": "n1", "text": "Coffee tomorrow morning? ☕", "time": "2026-10-05T08:22:00.000Z", "fromMe": false },
+        { "id": "n2", "text": "Absolutely. Same place at 9?", "time": "2026-10-05T08:31:00.000Z", "fromMe": true }
+      ]
+    },
+    {
+      "id": "studio",
+      "name": "Studio Friends",
+      "username": "5 members",
+      "color": "#e8bd65",
+      "online": false,
+      "unread": 0,
+      "messages": [
+        { "id": "s1", "text": "I added the new moodboard to the shared folder.", "time": "2026-10-04T16:42:00.000Z", "fromMe": false },
+        { "id": "s2", "text": "These colors are exactly what we were looking for.", "time": "2026-10-04T17:03:00.000Z", "fromMe": true }
+      ]
+    },
+    {
+      "id": "leo",
+      "name": "Leo Park",
+      "username": "@leopark",
+      "color": "#e58a9b",
+      "online": false,
+      "unread": 0,
+      "messages": [
+        { "id": "l1", "text": "Sent you the playlist we talked about 🎧", "time": "2026-10-04T12:25:00.000Z", "fromMe": false }
+      ]
+    },
+    {
+      "id": "ella",
+      "name": "Ella Thompson",
+      "username": "@ellat",
+      "color": "#8299dc",
+      "online": true,
+      "unread": 0,
+      "messages": [
+        { "id": "e1", "text": "Thank you again for your help yesterday!", "time": "2026-10-03T18:10:00.000Z", "fromMe": false }
+      ]
+    }
+  ],
+  "statuses": [
+    { "id": "st1", "name": "Maya Chen", "color": "#f0a17b", "text": "A little sunshine goes a long way ☀️", "time": "2 hours ago", "seen": false },
+    { "id": "st2", "name": "Noah Williams", "color": "#6cbea7", "text": "Weekend state of mind 🌿", "time": "4 hours ago", "seen": false },
+    { "id": "st3", "name": "Leo Park", "color": "#e58a9b", "text": "Found my new favorite corner of the city.", "time": "Yesterday", "seen": true }
+  ]
+}

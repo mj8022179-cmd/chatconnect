@@ -1,0 +1,43 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input, textarea { font: inherit; }
+button { color: inherit; cursor: pointer; }
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 3px solid rgba(129, 117, 232, .27); outline-offset: 2px; }
+a { color: inherit; text-decoration: none; }
+h1, h2, p { margin-top: 0; }
+.eyebrow { color: #9a9ba8; font-size: 10px; font-weight: 700; letter-spacing: .14em; }
+.avatar { position: relative; display: inline-flex; flex: 0 0 auto; align-items: center; justify-content: center; color: #fff; border-radius: 50%; background: linear-gradient(145deg, color-mix(in srgb, var(--avatar-color) 82%, white), var(--avatar-color)); font-weight: 700; letter-spacing: -.04em; }
+.avatar span { text-shadow: 0 1px 2px rgba(0,0,0,.08); }
+.avatar-sm { width: 34px; height: 34px; font-size: 11px; }
+.avatar-md { width: 44px; height: 44px; font-size: 13px; }
+.avatar-lg { width: 50px; height: 50px; font-size: 14px; }
+.avatar-xl { width: 88px; height: 88px; border: 5px solid white; font-size: 23px; box-shadow: 0 2px 10px rgba(41,42,68,.12); }
+.avatar-ring { outline: 2px solid #8b7df0; outline-offset: 3px; }
+.online-dot { position: absolute; right: 0; bottom: 1px; width: 12px; height: 12px; background: #57c49b; border: 2px solid white; border-radius: 50%; }
+.icon-button { display: inline-grid; place-items: center; width: 38px; height: 38px; border: 0; border-radius: 12px; color: #77798a; background: transparent; font-size: 22px; }
+.icon-button:hover { background: #f5f4fb; color: var(--purple-dark); }
+.primary-button { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 48px; padding: 0 18px; border: 0; border-radius: 13px; color: white; background: var(--purple); font-weight: 700; transition: .2s ease; }
+.primary-button:hover { background: var(--purple-dark); transform: translateY(-1px); }
+.secondary-button { display: inline-flex; align-items: center; gap: 16px; min-height: 40px; padding: 0 15px; border: 1px solid var(--line); border-radius: 11px; color: #55566a; background: #fff; font-weight: 600; }
+.secondary-button:hover { border-color: #c7c1f3; color: var(--purple-dark); }
+.empty-state { display: grid; justify-items: center; align-content: center; padding: 30px 20px; text-align: center; }
+.empty-icon { display: grid; place-items: center; width: 48px; height: 48px; margin-bottom: 14px; border-radius: 16px; color: var(--purple); background: var(--purple-pale); font-size: 23px; }
+.empty-state h2 { margin-bottom: 7px; font: 700 16px Manrope, sans-serif; }
+.empty-state p { max-width: 240px; margin-bottom: 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.modal-backdrop { position: fixed; z-index: 20; inset: 0; display: grid; place-items: center; padding: 20px; background: rgba(31, 31, 49, .34); backdrop-filter: blur(4px); }
+.modal-card { width: min(100%, 440px); overflow: hidden; border-radius: 22px; background: white; box-shadow: 0 24px 70px rgba(34, 34, 57, .2); animation: modal-in .2s ease; }
+@keyframes modal-in { from { opacity: 0; transform: translateY(8px) scale(.98); } to { opacity: 1; transform: none; } }
+.modal-heading { display: flex; justify-content: space-between; align-items: center; padding: 22px 24px 17px; border-bottom: 1px solid var(--line); }
+.modal-heading h2 { margin: 0; font: 800 17px Manrope, sans-serif; }
+.modal-form { display: grid; gap: 11px; padding: 22px 24px 24px; }
+.modal-form label, .login-card form label { color: #55566a; font-size: 12px; font-weight: 700; }
+.modal-form input, .modal-form textarea, .login-card input { width: 100%; padding: 13px 14px; border: 1px solid #e6e6ed; border-radius: 11px; outline: none; background: #fcfcfd; }
+.modal-form input:focus, .modal-form textarea:focus, .login-card input:focus { border-color: #a49bf0; }
+.modal-form textarea { resize: vertical; }
+.modal-form .primary-button { margin-top: 7px; }
+.character-count { justify-self: end; color: var(--muted); font-size: 11px; }
+.loader { display: flex; align-items: center; justify-content: center; gap: 5px; padding: 24px; }
+.loader span { width: 6px; height: 6px; border-radius: 50%; background: var(--purple); animation: loader-pulse .8s infinite alternate; }
+.loader span:nth-child(2) { animation-delay: .2s; }.loader span:nth-child(3) { animation-delay: .4s; }
+.loader small { margin-left: 8px; color: var(--muted); }
+@keyframes loader-pulse { to { opacity: .3; transform: translateY(-3px); } }
